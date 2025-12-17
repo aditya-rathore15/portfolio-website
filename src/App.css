@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.test-container {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Header Section */
+.test-header {
+  text-align: center;
+  padding: 80px 20px 60px;
+  background: linear-gradient(180deg, #fafafa 0%, #ffffff 100%);
+}
+
+.test-title {
+  font-size: 48px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.test-subtitle {
+  font-size: 21px;
+  font-weight: 400;
+  color: #6e6e73;
+  line-height: 1.4;
+}
+
+/* Content Section */
+.test-content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.test-card {
+  background: #f5f5f7;
+  border-radius: 18px;
+  padding: 40px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.test-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.test-card h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 16px;
+}
+
+.test-card p {
+  font-size: 17px;
+  color: #6e6e73;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* Button */
+.test-button {
+  background: #0071e3;
   color: white;
+  border: none;
+  border-radius: 980px;
+  padding: 12px 24px;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.test-button:hover {
+  background: #0077ed;
+  transform: scale(1.02);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.test-button:active {
+  transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .test-title {
+    font-size: 36px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .test-subtitle {
+    font-size: 18px;
+  }
+  
+  .test-card {
+    padding: 30px 20px;
+  }
+  
+  .test-card h2 {
+    font-size: 24px;
   }
 }
