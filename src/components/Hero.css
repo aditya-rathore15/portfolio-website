@@ -1,0 +1,175 @@
+/* Hero Section Container */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 40px;
+  background: linear-gradient(180deg, #fafafa 0%, #ffffff 100%);
+  position: relative;
+}
+
+.hero-content {
+  max-width: 800px;
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Main title with subtle entrance animation */
+.hero-title {
+  font-size: 72px;
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 20px;
+  letter-spacing: -1.5px;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Subtitle with role information */
+.hero-subtitle {
+  font-size: 24px;
+  font-weight: 500;
+  color: #424245;
+  margin-bottom: 24px;
+  line-height: 1.4;
+  animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+/* Description paragraph */
+.hero-description {
+  font-size: 19px;
+  color: #6e6e73;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInUp 1.2s ease-out 0.4s both;
+}
+
+/* Button container */
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 48px;
+  animation: fadeInUp 1.4s ease-out 0.6s both;
+}
+
+/* Social links */
+.hero-links {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInUp 1.6s ease-out 0.8s both;
+}
+
+.hero-link {
+  color: #0071e3;
+  font-size: 17px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.hero-link:hover {
+  color: #0077ed;
+  text-decoration: underline;
+}
+
+.hero-link-divider {
+  color: #d2d2d7;
+  margin: 0 4px;
+}
+
+/* Scroll indicator at bottom */
+.scroll-indicator {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: bounce 2s infinite;
+}
+
+.scroll-arrow {
+  width: 24px;
+  height: 24px;
+  border-left: 2px solid #86868b;
+  border-bottom: 2px solid #86868b;
+  transform: rotate(-45deg);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-5px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 90vh;
+    padding: 40px 20px;
+  }
+
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+  }
+
+  .hero-description {
+    font-size: 17px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 36px;
+    letter-spacing: -1px;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .hero-links {
+    flex-wrap: wrap;
+  }
+}

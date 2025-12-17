@@ -1,109 +1,116 @@
-/* Reset and Base Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Main App Container */
+.app {
+  width: 100%;
+  overflow-x: hidden;
 }
 
-.test-container {
-  min-height: 100vh;
-  background-color: #ffffff;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+/* Section Container - Shared styling for all sections */
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 40px;
 }
 
-/* Header Section */
-.test-header {
-  text-align: center;
-  padding: 80px 20px 60px;
-  background: linear-gradient(180deg, #fafafa 0%, #ffffff 100%);
-}
-
-.test-title {
+/* Section Title - Consistent heading style */
+.section-title {
   font-size: 48px;
   font-weight: 600;
   color: #1d1d1f;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   letter-spacing: -0.5px;
+  text-align: center;
 }
 
-.test-subtitle {
+.section-subtitle {
   font-size: 21px;
-  font-weight: 400;
   color: #6e6e73;
-  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 60px;
+  font-weight: 400;
 }
 
-/* Content Section */
-.test-content {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 40px 20px;
-}
-
-.test-card {
+/* Card Component - Reusable card style */
+.card {
   background: #f5f5f7;
   border-radius: 18px;
-  padding: 40px;
-  text-align: center;
+  padding: 32px;
+  margin-bottom: 24px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.test-card:hover {
+.card:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
 }
 
-.test-card h2 {
-  font-size: 28px;
-  font-weight: 600;
-  color: #1d1d1f;
-  margin-bottom: 16px;
-}
-
-.test-card p {
-  font-size: 17px;
-  color: #6e6e73;
-  line-height: 1.6;
-  margin-bottom: 24px;
-}
-
-/* Button */
-.test-button {
+/* Button Styles */
+.btn-primary {
   background: #0071e3;
   color: white;
   border: none;
   border-radius: 980px;
-  padding: 12px 24px;
+  padding: 12px 28px;
   font-size: 17px;
   font-weight: 500;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.2s ease;
+  display: inline-block;
 }
 
-.test-button:hover {
+.btn-primary:hover {
   background: #0077ed;
   transform: scale(1.02);
 }
 
-.test-button:active {
+.btn-primary:active {
   transform: scale(0.98);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #0071e3;
+  border: 2px solid #0071e3;
+  border-radius: 980px;
+  padding: 10px 26px;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-secondary:hover {
+  background: #0071e3;
+  color: white;
+  transform: scale(1.02);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .test-title {
+  .section {
+    padding: 60px 20px;
+  }
+
+  .section-title {
     font-size: 36px;
   }
-  
-  .test-subtitle {
+
+  .section-subtitle {
     font-size: 18px;
+    margin-bottom: 40px;
   }
-  
-  .test-card {
-    padding: 30px 20px;
+
+  .card {
+    padding: 24px;
   }
-  
-  .test-card h2 {
-    font-size: 24px;
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
   }
 }
