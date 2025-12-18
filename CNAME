@@ -1,1 +1,1 @@
-rathore-aditya.com
+echo "rathore-aditya.com" > public/CNAME
