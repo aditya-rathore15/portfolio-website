@@ -13,6 +13,7 @@ function Education() {
             <div>
               <h3 className="education-school">University of Florida</h3>
               <p className="education-degree">Master of Science in Computer Science</p>
+              <p className="education-gpa">GPA: 4.0/4.0</p>
               <p className="education-location">Gainesville, Florida</p>
             </div>
             <div className="education-date">Aug 2025 – May 2027</div>
