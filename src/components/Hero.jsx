@@ -2,14 +2,14 @@ import './Hero.css'
 
 function Hero() {
   return (
-    <section className="hero">
+    <section id="hero" className="hero">
       <div className="hero-content">
         {/* Main heading with fade-in animation */}
         <h1 className="hero-title">Aditya Rathore</h1>
         
         {/* Subtitle highlighting key credentials */}
         <p className="hero-subtitle">
-          MS Computer Science Student at University of Florida<br/>
+          MS Computer Science at University of Florida<br/>
           Software Engineer | Distributed Systems Enthusiast
         </p>
         

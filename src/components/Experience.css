@@ -1,0 +1,123 @@
+/* Experience Section */
+.experience-section {
+  background-color: #ffffff;
+}
+
+.experience-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Experience Card */
+.experience-card {
+  background: #f5f5f7;
+  border-radius: 18px;
+  padding: 36px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Header Section */
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #d2d2d7;
+}
+
+.experience-company {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 6px;
+}
+
+.experience-role {
+  font-size: 20px;
+  color: #424245;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.experience-location {
+  font-size: 15px;
+  color: #86868b;
+}
+
+.experience-date {
+  font-size: 17px;
+  color: #0071e3;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Achievements List */
+.experience-achievements {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.experience-achievements li {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #1d1d1f;
+  padding-left: 28px;
+  position: relative;
+}
+
+/* Custom bullet point */
+.experience-achievements li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #0071e3;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.experience-achievements li strong {
+  color: #1d1d1f;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .experience-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .experience-date {
+    align-self: flex-start;
+  }
+  
+  .experience-company {
+    font-size: 24px;
+  }
+  
+  .experience-role {
+    font-size: 18px;
+  }
+  
+  .experience-card {
+    padding: 28px;
+  }
+  
+  .experience-achievements li {
+    font-size: 16px;
+    padding-left: 24px;
+  }
+}

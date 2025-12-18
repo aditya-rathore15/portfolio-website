@@ -34,7 +34,7 @@ function Education() {
             <div>
               <h3 className="education-school">JK Lakshmipat University</h3>
               <p className="education-degree">Bachelor of Technology in Computer Science and Engineering</p>
-              <p className="education-gpa">GPA: 8.6/10 • <strong>Graduated First in Class with Gold Medal</strong></p>
+              <p className="education-gpa">GPA: 8.6/10 </p>
               <p className="education-location">Rajasthan, India</p>
             </div>
             <div className="education-date">Jul 2018 – May 2022</div>
